@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Campos</title>
+</head>
+<body>
+    <h1>Formulários e Campos</h1>
+
+    <form action="" method=""></form>
+    <!-- form usado para criar um novo formulário -->
+
+    <form acrion=""> Campo de formulário:
+        <input type="text" id="nome" name="nome">
+        <!-- input define um campo de formulário -->
+    </form>
+
+    <br>
+
+    <form action=""> Campo de texto:
+        <textarea name="texto" rows="4" cols="50" id="nome"></textarea>
+        <!-- textarea define um campo de texto -->
+    </form>
+
+    <br>
+
+    <button type="button">Clica aqui</button>
+    <!-- button cria um botão clicável -->
+
+    <br>
+    <br>
+
+    <form action="">
+        <select name="carros" id="carros">
+        <!-- select cria uma lista de itens selecionáveis -->
+            <optgroup label="Carros Suecos">
+            <!--optgroup cria uma lista de itens relacionados-->
+                <option value="volvo">Volvo</option>
+                <!-- option define uma opção de uma lista de itens selecionaveis -->
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="Carros alemães">
+                <option value="mercedes">Mercerdes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <br>
+
+    <form action="">
+        <fieldset>
+        <!-- fieldset agrupa um ou mais elementos de um formulário -->
+            <legend>Dados: </legend>
+            <!-- legend define uma legenda para um elemento de fieldset -->
+            <label for="nome">Nome: </label>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <form action="">
+        <datalist id="navegadores"> 
+        <!-- datalist define uma lista predefinida de opções -->
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <br>
+
+    <form action="">
+        <input type="range" id="a" value="50">
+        <br>
+        <input type="number" id="b" value="25">
+        <br>
+        <output name="x" for="a b"></output>
+        <!-- output apresenta o resultado de um cálculo -->
+    </form>
+</body>
+</html>

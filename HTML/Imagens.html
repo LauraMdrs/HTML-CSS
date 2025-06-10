@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <img src="https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg" alt="Flor" width="300" height="200">
+    <!-- img usado para adicionar uma imagem -->
+
+    <br>
+
+    <map name="map">
+        <!-- map adiciona uma imagem/mapa clicável -->
+        <area shape="rect" coords="34,44,270,350" alt="Computador" href="computador.html">
+        <!-- area define uma área dentro de um mapa de imagem -->
+        <area shape="rect" coords="290,172,333,250" alt="Telefone" href="telefone.html">
+        <area shape="circle" coords="337,300,44" href="Café" alt="cafe.html">
+    </map>
+
+    <br>
+
+    <canvas id="meuCanva">
+        <!-- canvas usado para desenhar/inserir gráficos em tempo real -->
+        O seu navegador não suporta.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("meuCanva");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+
+    <br>
+
+    <figure>
+    <!-- figure é usado para marcar uma foto -->
+        <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" style="width: 100%;">
+        <figcaption>Fig. 1 - Trulli, Puglia, Italy.</figcaption>
+        <!-- figcaption define uma legenda para uma "figure" -->
+    </figure>
+
+    <br>
+
+    <picture>
+    <!-- picture usado para guardar diversas imagens-->
+        <source media="(min-width:650px)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIhKu1Ic_IGncy2uJPRjReLCNKZLTviBnE44mbhi5PX7fqXoOzUuDj0iFZOinkK9S7km0&usqp=CAU">
+        <source media="(min-width:465px)" srcset="https://s2-g1.glbimg.com/c1tS_axTjV_qDkmMeMs3wYZCgGY=/0x0:5472x3648/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/H/v/pTatikTlSIWRuTzd0JwA/j9a6180.jpg">
+        <img src="https://ciclovivo.com.br/wp-content/uploads/2018/10/iStock-536613027.jpg" alt="Flor" style="width: 250px;">
+    </picture>
+
+    <br>
+    <br>
+
+    <svg width="100" height="100">
+    <!-- svg usado para criar gráficos SVG -->
+        <circle cx="50" r="40"stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+</body>
+</html>

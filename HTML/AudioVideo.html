@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio e Vídeo</title>
+</head>
+<body>
+    <h1>Áudio e Vídeo</h1>
+
+    <audio controls>
+    <!-- audio usado para adicionar áudios -->
+        <source src="horse.ogg" type="audio/ogg">
+    </audio>
+
+    <br>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        <!-- source usado para definir múltiplos arquivos de mídia para vídeo ou áudio - ao adicionar duas ou mais opções de arquivo de mídiaa o navegador escolherá o melhor. -->
+    </audio>
+
+    <br>
+
+    <video width="300" height="240" controls>
+    <!-- video adiciona um vídeo o filme -->
+        <source src="forrest_gump.mp4" type="video/mp4">
+        <source src="forrest_gump.ogg" type="video/ogg">
+        <track src="fgsubtitles_en.vtt" kind="legenda" srclang="en" label="Inglês">
+        <track src="fgsubtitles_no.vtt" kind="legenda" srclang="no" label="Noruguês">
+        <!-- track irá adicionar faixas de texto para o seu elemento de áudio ou vídeo -->
+    </video>
+</body>
+</html>

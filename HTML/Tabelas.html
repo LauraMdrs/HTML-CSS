@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <!--
+    table - cria uma tabela
+    th - cabeçalho para a tabela
+    tr - linha para a tabela
+    td - célula para a tabela
+
+    thead - agrupa os cabeçalhos
+    tbody - agrupa o corpo da tabela
+    tfoot - agrupa o rodapé da tabela
+
+    colgroup - agrupa um ou mais "col"
+    col - determina propriedades específicas para cada coluna
+    -->
+
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: blueviolet;">
+            <col style="background-color: aqua;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Despesas</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Janeiro</td>
+                <td>R$ 100,00</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td>Soma</td>
+                <td>R$ 100,00</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
